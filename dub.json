@@ -1,0 +1,13 @@
+{
+	"authors": [
+		"Sergei Giniatulin"
+	],
+	"copyright": "Copyright © 2024, Sergei Giniatulin",
+	"dependencies": {
+		"protobuf": "~>0.6.2",
+		"rtree": "~master"
+	},
+	"description": "A fast timezone finder for D",
+	"license": "MIT",
+	"name": "tzf_d"
+}

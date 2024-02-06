@@ -1,0 +1,16 @@
+.dub
+docs.json
+__dummy.html
+docs/
+/tzf-d
+tzf-d.so
+tzf-d.dylib
+tzf-d.dll
+tzf-d.a
+tzf-d.lib
+tzf-d-test-*
+*.exe
+*.pdb
+*.o
+*.obj
+*.lst
