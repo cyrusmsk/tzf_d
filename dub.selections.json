@@ -1,0 +1,7 @@
+{
+	"fileVersion": 1,
+	"versions": {
+		"protobuf": "0.6.2",
+		"rtree": "~master"
+	}
+}

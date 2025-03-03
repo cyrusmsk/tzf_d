@@ -29,10 +29,10 @@ Because of regression in D compiler, currently code is working only with dmd 2.1
 ## Structure of the project
 ```bash
 ├── Readme.md
-├── data
-│   ├── combined-with-oceans.reduce.compress.pb
-│   ├── combined-with-oceans.reduce.pb
-│   └── combined-with-oceans.reduce.preindex.pb
+├── tzf-rel
+│   ├── combined-with-oceans.reduce.compress.bin
+│   ├── combined-with-oceans.reduce.bin
+│   └── combined-with-oceans.reduce.preindex.bin
 ├── dub.json
 └── source
     ├── app.d
@@ -43,7 +43,7 @@ Because of regression in D compiler, currently code is working only with dmd 2.1
     │   └── tzinfo.d
     └── tzf_rel.d
 ```
-- data: has data files, that will be used to match time zone
+- tzf-rel: has data files, that will be used to match time zone
 - source/app.d: CLI code
 - source/geomedry.d: library with geometry primitives (could be used separatly)
 - source/lib.d: main library code with internal classes and logic
@@ -54,7 +54,7 @@ Because of regression in D compiler, currently code is working only with dmd 2.1
 - [ ] Make code more iDiomatic
 - [ ] Fix dub configuration, to make code available as both CLI and D library
 - [ ] Improve performance
-- [ ] Reduce copy of the data (adding ref and other attributes)
+- [X] Reduce copy of the data (adding ref and other attributes)
 - [ ] struct vs class
 - [ ] make protobuf generation automatically in dub
 - [ ] consider code that download only required data, instead of storing all data in the package (~18Mb)
